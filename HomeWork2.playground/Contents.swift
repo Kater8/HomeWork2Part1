@@ -86,22 +86,32 @@ print("\nРозділ 1.2 Змінні\n")
      ...
 
  */
+var someUserFirstName: String = "Oleg"
+var someUserLastName: String = "Lir"
+var someUserAge: Int = 38
+var someUserHeight: Int = 167
+var someUserWeiht: Int = 81
+var someUserMarried: Bool = false
 
 print("Інформація за 2018 р.:")
-print("Ім'я: ")
-print("Прізвище: ")
-print("Вік: ")
-print("зріст: см")
-print("Вага: кг")
-print("У шлюбі: ")
+print("Ім'я: \(someUserFirstName)")
+print("Прізвище: \(someUserLastName)")
+print("Вік: \(someUserAge)")
+print("зріст: \(someUserHeight) см")
+print("Вага: \(someUserWeiht) кг")
+print("У шлюбі: \(someUserMarried)")
+
+someUserMarried = true
+someUserWeiht = 80
+someUserAge = 40
 
 print("\nІнформація за поточний рік:")
-print("Ім'я: ")
-print("Прізвище: ")
-print("Вік: ")
-print("зріст: см")
-print("Вага: кг")
-print("У шлюбі: ")
+print("Ім'я: \(someUserFirstName)")
+print("Прізвище: \(someUserLastName)")
+print("Вік: \(someUserAge)")
+print("зріст: \(someUserHeight) см")
+print("Вага: \(someUserWeiht) кг")
+print("У шлюбі: \(someUserMarried)")
 
 
 print("\nРозділ 1.3 Псевдоніми\n")
