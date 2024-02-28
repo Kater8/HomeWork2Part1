@@ -90,7 +90,7 @@ var someUserFirstName: String = "Oleg"
 var someUserLastName: String = "Lir"
 var someUserAge: Int = 38
 var someUserHeight: Int = 167
-var someUserWeiht: Int = 81
+var someUserWeight: Int = 81
 var someUserMarried: Bool = false
 
 print("Інформація за 2018 р.:")
@@ -98,11 +98,11 @@ print("Ім'я: \(someUserFirstName)")
 print("Прізвище: \(someUserLastName)")
 print("Вік: \(someUserAge)")
 print("зріст: \(someUserHeight) см")
-print("Вага: \(someUserWeiht) кг")
+print("Вага: \(someUserWeight) кг")
 print("У шлюбі: \(someUserMarried)")
 
 someUserMarried = true
-someUserWeiht = 80
+someUserWeight = 80
 someUserAge = 40
 
 print("\nІнформація за поточний рік:")
@@ -110,7 +110,7 @@ print("Ім'я: \(someUserFirstName)")
 print("Прізвище: \(someUserLastName)")
 print("Вік: \(someUserAge)")
 print("зріст: \(someUserHeight) см")
-print("Вага: \(someUserWeiht) кг")
+print("Вага: \(someUserWeight) кг")
 print("У шлюбі: \(someUserMarried)")
 
 
@@ -210,16 +210,24 @@ print("\nРозділ 1.4 Кортежі\n")
 
  */
 
-print("Прізвище: ")
-print("Вік: ")
-print("Зріст: см")
-print("Вага: кг")
-print("У шлюбі: ")
+var profileInfo = (firstName: someUserFirstName, lastName: someUserLastName, age: someUserAge, height: someUserHeight, weight: someUserWeight, married: someUserMarried)
+profileInfo.age = 45
+profileInfo.weight = 67
+
+
+print("Прізвище: \(profileInfo.lastName)")
+print("Вік: \(profileInfo.age)")
+print("Зріст: \(profileInfo.height)см")
+print("Вага: \(profileInfo.weight)кг")
+print("У шлюбі: \(profileInfo.married)")
+
+var weatherInfo = (humidity, celsius, pressure)
+weatherInfo.1 = 22
 
 print("\nІнфорація про погоду:")
-print("Тиск: hPa")
-print("Вологість: %")
-print("Температура: C")
+print("Тиск: \(weatherInfo.2)hPa")
+print("Вологість: \(weatherInfo.0)%")
+print("Температура: \(weatherInfo.1)C")
 
 
 print("\nРозділ 1.5 Опціонали\n")
